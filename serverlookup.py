@@ -25,8 +25,8 @@ def main():
     except FileNotFoundError:
         print(f"File {args.file} not found", file=sys.stderr)
         exit(1)
-    finally:
-        csvfile.close()
+    
+    csvfile.close()
     
     # Try to find the serial number specified - error to stderr otherwise
     try:
