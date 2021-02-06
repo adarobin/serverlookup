@@ -8,7 +8,7 @@ import ipaddress
 
 argparser = argparse.ArgumentParser()
 argparser.add_argument("serial", help="serial number to look up")
-argparser.add_argument("-f","--file", help="path to csv file")
+argparser.add_argument("-f","--file", help="path to csv file (set to ./newservers.csv if unspecified)")
 args = argparser.parse_args()
 
 def main():
